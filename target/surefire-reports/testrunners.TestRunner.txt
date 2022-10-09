@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: testrunners.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 185.811 s <<< FAILURE! - in testrunners.TestRunner
+runScenario(testrunners.TestRunner)  Time elapsed: 20.064 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+

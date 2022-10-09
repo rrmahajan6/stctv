@@ -1,0 +1,7 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Ignore Mac system files
+.DS_store
+.idea/vcs.xml
+test-output/*
