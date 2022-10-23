@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 
 public class DriverFactory implements Constants {
 
-	public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
+	private static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
 	/**
 	 * This method is used to initialize the threadlocal driver on the basis of given
 	 * browser

@@ -1,11 +1,16 @@
 package com.pages;
 
+import com.qa.factory.DriverFactory;
 import com.qa.util.Constants;
 import com.qa.util.CurrencyType;
 import com.qa.util.GetAmount;
 import com.qa.util.SeleniumUtilities;
+import de.erichseifert.vectorgraphics2d.intermediate.commands.DrawImageCommand;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
@@ -37,6 +42,7 @@ public class CheckOut implements Constants {
     public List<WebElement> orderSummary;
     @FindBy(xpath = "//div[@class='packageDetails-top']")
     public List<WebElement> planAndAddOn;
+    By planAdd= By.xpath("//div[@class='packageDetails-top']");
     @FindBy(xpath = "//section[@class='paymentMethod-sticky']")
     public WebElement footerDetails;
     @FindBy(xpath = "(//em[@class='package-price'])[1]")
@@ -105,9 +111,11 @@ public class CheckOut implements Constants {
         countryAndCurrency = df.format(GetAmount.valueOf(StvSubscription.country + StvSubscription.planType).getPrice()) + CurrencyType.valueOf(StvSubscription.country).getCurrencyType();
         Assert.assertTrue(utilities.stringForming(stcAmountCurrency.getText().split(":")).equalsIgnoreCase("Starting"+countryAndCurrency));
         utilities.click(stcPaymentMethod);
-        SeleniumUtilities.wait(3);
-        System.out.println(utilities.stringForming(planAndAddOn.get(0).getText().split(System.lineSeparator())));
-        System.out.println("Planstctv" + StvSubscription.planType + countryAndCurrency + FREQUENCY);
+//        SeleniumUtilities.wait(3);
+        utilities.scrollToElement(driver,planAndAddOn.get(0));
+        utilities.waitTillAllElementsArePresent(driver,planAdd);
+//        System.out.println(utilities.stringForming(planAndAddOn.get(0).getText().split(System.lineSeparator())));
+//        System.out.println("Planstctv" + StvSubscription.planType + countryAndCurrency + FREQUENCY);
         Assert.assertTrue(utilities.stringForming(planAndAddOn.get(0).getText().split(System.lineSeparator())).equalsIgnoreCase("Planstctv" + StvSubscription.planType + countryAndCurrency + FREQUENCY));
         if (StvSubscription.planType.equalsIgnoreCase(Constants.Premium)) {
             discoveryText = Constants.includedDiscoveryText;

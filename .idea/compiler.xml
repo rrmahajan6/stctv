@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Stv" />
+        <module name="StvProject_Cucumber" />
         <module name="StvProject" />
       </profile>
     </annotationProcessing>

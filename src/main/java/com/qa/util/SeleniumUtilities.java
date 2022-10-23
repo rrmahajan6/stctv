@@ -5,16 +5,15 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.text.DecimalFormat;
-import java.util.List;
+import java.time.Duration;
 
 public class SeleniumUtilities {
     WebDriverWait wait;
     JavascriptExecutor jsDriver;
     private static final DecimalFormat df = new DecimalFormat("0.00");
     public WebElement waitForElementToClickableAndClick(WebDriver driver,WebElement w){
-        wait=new WebDriverWait(driver,5);
+        wait=new WebDriverWait(driver, Duration.ofMinutes(1));
         wait.until(ExpectedConditions.elementToBeClickable(w));
         return w;
     }
@@ -62,9 +61,13 @@ public class SeleniumUtilities {
         }
         return s;
     }
-    public List<WebElement> waitTillAllElementsArePresent(WebDriver driver, By w){
-         wait=new WebDriverWait(driver,10);
-         wait.until(ExpectedConditions.presenceOfElementLocated(w));
-         return driver.findElements(w);
+    public void waitTillAllElementsArePresent(WebDriver driver, By w){
+        try {
+            wait=new WebDriverWait(driver,Duration.ofMinutes(1));
+            wait.until(ExpectedConditions.presenceOfElementLocated(w));
+        }
+        catch (Exception e){
+        }
+
     }
 }

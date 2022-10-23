@@ -23,4 +23,11 @@ Feature: Checkout the Subscription Package
       | Bahrain | Lite    | true       | false  |
       | Bahrain | Classic | false      | true   |
       | Bahrain | Premium | true       | false  |
+#
 
+#  Reading the json file into json object
+#    modify the json
+#    form a request using metadata
+#      getResponse-> URL=> ReqeustSPecification=>
+#       receive the response
+#        assert for requirements
