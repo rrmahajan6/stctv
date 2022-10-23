@@ -22,7 +22,7 @@ public class DriverFactory implements Constants {
 	public WebDriver init_driver(String browser) {
 		if (browser.equals("chrome")) {
 			ChromeOptions chromeOptions=new ChromeOptions();
-			chromeOptions.addArguments("--disable-notifications");
+			chromeOptions.addArguments("--disable-notifications","--headless","--incognito");
 			WebDriverManager.chromedriver().setup();
 			tlDriver.set(new ChromeDriver(chromeOptions));
 		} else if (browser.equals("firefox")) {

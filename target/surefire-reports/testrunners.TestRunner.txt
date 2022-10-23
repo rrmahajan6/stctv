@@ -1,0 +1,48 @@
+-------------------------------------------------------------------------------
+Test set: testrunners.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 155.331 s <<< FAILURE! - in testrunners.TestRunner
+testrunners.TestRunner.runScenario["verify user can checkout the subscribed package", "Checkout the Subscription Package"](4)  Time elapsed: 10.05 s  <<< FAILURE!
+java.lang.AssertionError: expected [15.00SAR/Month] but found [from15.00SAR/Month]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at com.pages.StvSubscription.trialPlanSelection(StvSubscription.java:93)
+	at stepDefinition.SubscriptionSteps.choose_and_verify_trial_plan_type(SubscriptionSteps.java:29)
+	at ✽.choose and verify trial plan type "Lite"(file:///Users/rahul/Documents/ideaProjects/StvProject_Cucumber/src/test/resources/features/Subscription.feature:11)
+
+testrunners.TestRunner.runScenario["verify user can checkout the subscribed package", "Checkout the Subscription Package"](5)  Time elapsed: 10.695 s  <<< FAILURE!
+java.lang.AssertionError: expected [25.00SAR/Month] but found [from25.00SAR/Month]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at com.pages.StvSubscription.trialPlanSelection(StvSubscription.java:99)
+	at stepDefinition.SubscriptionSteps.choose_and_verify_trial_plan_type(SubscriptionSteps.java:29)
+	at ✽.choose and verify trial plan type "Classic"(file:///Users/rahul/Documents/ideaProjects/StvProject_Cucumber/src/test/resources/features/Subscription.feature:11)
+
+testrunners.TestRunner.runScenario["verify user can checkout the subscribed package", "Checkout the Subscription Package"](6)  Time elapsed: 9.587 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at org.testng.Assert.assertTrue(Assert.java:66)
+	at com.pages.CheckOut.addOnPageFieldsVerification(CheckOut.java:112)
+	at stepDefinition.SubscriptionSteps.user_includes_the_add_ons(SubscriptionSteps.java:38)
+	at ✽.user includes the add ons "false" "false"(file:///Users/rahul/Documents/ideaProjects/StvProject_Cucumber/src/test/resources/features/Subscription.feature:13)
+
+testrunners.TestRunner.runScenario["verify user can checkout the subscribed package", "Checkout the Subscription Package"](7)  Time elapsed: 17.338 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at org.testng.Assert.assertTrue(Assert.java:66)
+	at com.pages.CheckOut.addOnPageFieldsVerification(CheckOut.java:119)
+	at stepDefinition.SubscriptionSteps.user_includes_the_add_ons(SubscriptionSteps.java:38)
+	at ✽.user includes the add ons "true" "false"(file:///Users/rahul/Documents/ideaProjects/StvProject_Cucumber/src/test/resources/features/Subscription.feature:13)
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Surefire suite</th></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">154,754</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="4">testrunners.TestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="4">1666526194798</td><td rowspan="4">9586</td></tr><tr class="failedeven"><td><a href="#m1">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m2">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m3">runScenario</a></td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">testrunners.TestRunner</td><td><a href="#m4">runScenario</a></td><td rowspan="5">1666526122681</td><td rowspan="5">20628</td></tr><tr class="passedeven"><td><a href="#m5">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m6">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m7">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m8">runScenario</a></td></tr></tbody>
+</table>
+<h2>Surefire test</h2><h3 id="m0">testrunners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;verify user can checkout the subscribed package&quot;</td><td>&quot;Checkout the Subscription Package&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at com.pages.CheckOut.addOnPageFieldsVerification(CheckOut.java:112)
+	at stepDefinition.SubscriptionSteps.user_includes_the_add_ons(SubscriptionSteps.java:38)
+	at ✽.user includes the add ons &quot;false&quot; &quot;false&quot;(file:///Users/rahul/Documents/ideaProjects/StvProject_Cucumber/src/test/resources/features/Subscription.feature:13)
+... Removed 4 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testrunners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;verify user can checkout the subscribed package&quot;</td><td>&quot;Checkout the Subscription Package&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [25.00SAR/Month] but found [from25.00SAR/Month]
+	at com.pages.StvSubscription.trialPlanSelection(StvSubscription.java:99)
+	at stepDefinition.SubscriptionSteps.choose_and_verify_trial_plan_type(SubscriptionSteps.java:29)
+	at ✽.choose and verify trial plan type &quot;Classic&quot;(file:///Users/rahul/Documents/ideaProjects/StvProject_Cucumber/src/test/resources/features/Subscription.feature:11)
+... Removed 6 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testrunners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;verify user can checkout the subscribed package&quot;</td><td>&quot;Checkout the Subscription Package&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at com.pages.CheckOut.addOnPageFieldsVerification(CheckOut.java:119)
+	at stepDefinition.SubscriptionSteps.user_includes_the_add_ons(SubscriptionSteps.java:38)
+	at ✽.user includes the add ons &quot;true&quot; &quot;false&quot;(file:///Users/rahul/Documents/ideaProjects/StvProject_Cucumber/src/test/resources/features/Subscription.feature:13)
+... Removed 4 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testrunners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;verify user can checkout the subscribed package&quot;</td><td>&quot;Checkout the Subscription Package&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [15.00SAR/Month] but found [from15.00SAR/Month]
+	at com.pages.StvSubscription.trialPlanSelection(StvSubscription.java:93)
+	at stepDefinition.SubscriptionSteps.choose_and_verify_trial_plan_type(SubscriptionSteps.java:29)
+	at ✽.choose and verify trial plan type &quot;Lite&quot;(file:///Users/rahul/Documents/ideaProjects/StvProject_Cucumber/src/test/resources/features/Subscription.feature:11)
+... Removed 6 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testrunners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;verify user can checkout the subscribed package&quot;</td><td>&quot;Checkout the Subscription Package&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">testrunners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;verify user can checkout the subscribed package&quot;</td><td>&quot;Checkout the Subscription Package&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">testrunners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;verify user can checkout the subscribed package&quot;</td><td>&quot;Checkout the Subscription Package&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">testrunners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;verify user can checkout the subscribed package&quot;</td><td>&quot;Checkout the Subscription Package&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">testrunners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;verify user can checkout the subscribed package&quot;</td><td>&quot;Checkout the Subscription Package&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
