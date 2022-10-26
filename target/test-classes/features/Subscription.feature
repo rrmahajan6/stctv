@@ -15,15 +15,15 @@ Feature: Checkout the Subscription Package
     Examples:
       | country | plan    | discovery+ | sports |
       | Kuwait  | Lite    | true       | true   |
-      | Kuwait  | Classic | true       | false  |
-      | Kuwait  | Premium | false      | true   |
-      | KSA     | Lite    | false      | false  |
-      | KSA     | Classic | true       | true   |
-      | KSA     | Premium | false      | false  |
-      | Bahrain | Lite    | true       | false  |
-      | Bahrain | Classic | false      | true   |
-      | Bahrain | Premium | true       | false  |
-#
+#      | Kuwait  | Classic | true       | false  |
+#      | Kuwait  | Premium | false      | true   |
+#      | KSA     | Lite    | false      | false  |
+#      | KSA     | Classic | true       | true   |
+#      | KSA     | Premium | false      | false  |
+#      | Bahrain | Lite    | true       | false  |
+#      | Bahrain | Classic | false      | true   |
+#      | Bahrain | Premium | true       | false  |
+##
 
 #  Reading the json file into json object
 #    modify the json

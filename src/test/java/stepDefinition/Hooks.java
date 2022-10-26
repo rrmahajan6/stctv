@@ -1,5 +1,6 @@
 package stepDefinition;
 
+import java.net.MalformedURLException;
 import java.util.Properties;
 
 import io.cucumber.java.Scenario;
@@ -24,7 +25,7 @@ public class Hooks {
 	}
 
 	@Before(order = 1)
-	public void launchBrowser() {
+	public void launchBrowser() throws MalformedURLException {
 		String browserName = prop.getProperty("browser");
 		driverFactory = new DriverFactory();
 		driver = driverFactory.init_driver(browserName);

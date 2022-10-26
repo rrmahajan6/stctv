@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Regression Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Oct 23, 2022 05:25:21 pm</span></a>
+<a href="#"><span class="badge badge-primary">Oct 26, 2022 08:14:00 am</span></a>
 </li>
 </ul>
 </div>
@@ -71,13 +71,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Oct 23, 2022 05:25:21 pm</h3>
+<h3>Oct 26, 2022 08:14:00 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Oct 23, 2022 05:27:31 pm</h3>
+<h3>Oct 26, 2022 08:14:33 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -128,9 +128,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='55%'><b>5</b> scenarios passed</small></div>
+<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='44%'><b>4</b> scenarios failed,
+<small data-tooltip='100%'><b>1</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -148,10 +148,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='79%'><b>46</b> steps passed</small></div>
+<div><small data-tooltip='71%'><b>5</b> steps passed</small></div>
 <div>
-<small data-tooltip='6%'><b>4</b> steps failed,
-<b>8</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='14%'><b>1</b> steps failed,
+<b>1</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -167,7 +167,7 @@
 </div></div>
 <script>
 var timeline = {
-"Checkout the Subscription Package":128.711
+"Checkout the Subscription Package":32.23
 };
 </script>
 <div class="row">
@@ -178,11 +178,11 @@ var timeline = {
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
 <td>@checkoutFlow</td>
-<td>5</td>
-<td>5</td>
+<td>0</td>
+<td>2</td>
 <td>0</td>
 <td>0</td>
-<td>50%</td>
+<td>0%</td>
 </tr>
 </tbody>
 </table></div>
@@ -224,16 +224,16 @@ failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 5,
-failChild: 4,
+passChild: 0,
+failChild: 1,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 46,
-failGrandChild: 4,
+passGrandChild: 5,
+failGrandChild: 1,
 warningGrandChild: 0,
-skipGrandChild: 8,
+skipGrandChild: 1,
 infoGrandChild: 0,
 eventsCount: 5,
 };
@@ -268,7 +268,7 @@ eventsCount: 5,
           <div class="test-detail">
             <p class="name">Checkout the Subscription Package</p>
             <p class="text-sm">
-              <span>5:25:22 pm</span> / <span>00:02:08:711</span>
+              <span>8:14:00 am</span> / <span>00:00:32:230</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -277,9 +277,9 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Checkout the Subscription Package</h5>
-<span class='badge badge-success'>10.23.2022 5:25:22 pm</span>
-<span class='badge badge-danger'>10.23.2022 5:27:31 pm</span>
-<span class='badge badge-default'>00:02:08:711</span>
+<span class='badge badge-success'>10.26.2022 8:14:00 am</span>
+<span class='badge badge-danger'>10.26.2022 8:14:33 am</span>
+<span class='badge badge-default'>00:00:32:230</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -301,124 +301,7 @@ eventsCount: 5,
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>verify user can checkout the subscribed package</div>
-                </div>
-              </div>
-              <div class="card-body mt-3 collapse">
-                  <div class="step pass-bg">
-                    <span>Given user has logged in to application</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When user selects country "Kuwait"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And choose and verify trial plan type "Lite"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And user enters account credentials</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And user includes the add ons "true" "true"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then verify checkout details are correct</span>
-      <div>
-      </div>
-                  </div>
-              </div>
-            </div>
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="14"><span class="badge log pass-bg mr-2">Pass</span>verify user can checkout the subscribed package</div>
-                </div>
-              </div>
-              <div class="card-body mt-3 collapse">
-                  <div class="step pass-bg">
-                    <span>Given user has logged in to application</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When user selects country "Kuwait"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And choose and verify trial plan type "Classic"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And user enters account credentials</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And user includes the add ons "true" "false"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then verify checkout details are correct</span>
-      <div>
-      </div>
-                  </div>
-              </div>
-            </div>
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="25"><span class="badge log pass-bg mr-2">Pass</span>verify user can checkout the subscribed package</div>
-                </div>
-              </div>
-              <div class="card-body mt-3 collapse">
-                  <div class="step pass-bg">
-                    <span>Given user has logged in to application</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When user selects country "Kuwait"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And choose and verify trial plan type "Premium"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And user enters account credentials</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And user includes the add ons "false" "true"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then verify checkout details are correct</span>
-      <div>
-      </div>
-                  </div>
-              </div>
-            </div>
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="36"><span class="badge log fail-bg mr-2">Fail</span>verify user can checkout the subscribed package</div>
+                  <div class="node" id="3"><span class="badge log fail-bg mr-2">Fail</span>verify user can checkout the subscribed package</div>
                     <div class="status-avatar float-right">
                       <i class="fa fa-paperclip"></i>
                     </div>
@@ -431,35 +314,33 @@ eventsCount: 5,
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>When user selects country "KSA"</span>
+                    <span>When user selects country "Kuwait"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And choose and verify trial plan type "Lite"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enters account credentials</span>
       <div>
       </div>
                   </div>
                   <div class="step fail-bg">
-                    <span>And choose and verify trial plan type "Lite"</span>
+                    <span>And user includes the add ons "true" "true"</span>
       <div>
-        <textarea disabled class="code-block">java.lang.AssertionError: expected [15.00SAR/Month] but found [from15.00SAR/Month]
+        <textarea disabled class="code-block">java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at org.testng.Assert.assertEquals(Assert.java:665)
-	at com.pages.StvSubscription.trialPlanSelection(StvSubscription.java:93)
-	at stepDefinition.SubscriptionSteps.choose_and_verify_trial_plan_type(SubscriptionSteps.java:29)
-	at ✽.choose and verify trial plan type "Lite"(file:///Users/rahul/Documents/ideaProjects/StvProject_Cucumber/src/test/resources/features/Subscription.feature:11)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at org.testng.Assert.assertTrue(Assert.java:66)
+	at com.pages.CheckOut.addOnPageFieldsVerification(CheckOut.java:119)
+	at stepDefinition.SubscriptionSteps.user_includes_the_add_ons(SubscriptionSteps.java:38)
+	at ✽.user includes the add ons "true" "true"(file:///Users/rahul/Documents/ideaProjects/StvProject_Cucumber/src/test/resources/features/Subscription.feature:13)
 </textarea>
       
-      </div>
-                  </div>
-                  <div class="step skip-bg">
-                    <span>And user enters account credentials</span>
-      <div>Step skipped
-      </div>
-                  </div>
-                  <div class="step skip-bg">
-                    <span>And user includes the add ons "false" "false"</span>
-      <div>Step skipped
       </div>
                   </div>
                   <div class="step skip-bg">
@@ -475,275 +356,6 @@ eventsCount: 5,
     
     </div></div>
 </div>
-      <div>
-      </div>
-                  </div>
-              </div>
-            </div>
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="47"><span class="badge log fail-bg mr-2">Fail</span>verify user can checkout the subscribed package</div>
-                    <div class="status-avatar float-right">
-                      <i class="fa fa-paperclip"></i>
-                    </div>
-                </div>
-              </div>
-              <div class="card-body mt-3 ">
-                  <div class="step pass-bg">
-                    <span>Given user has logged in to application</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When user selects country "KSA"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step fail-bg">
-                    <span>And choose and verify trial plan type "Classic"</span>
-      <div>
-        <textarea disabled class="code-block">java.lang.AssertionError: expected [25.00SAR/Month] but found [from25.00SAR/Month]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at org.testng.Assert.assertEquals(Assert.java:665)
-	at com.pages.StvSubscription.trialPlanSelection(StvSubscription.java:99)
-	at stepDefinition.SubscriptionSteps.choose_and_verify_trial_plan_type(SubscriptionSteps.java:29)
-	at ✽.choose and verify trial plan type "Classic"(file:///Users/rahul/Documents/ideaProjects/StvProject_Cucumber/src/test/resources/features/Subscription.feature:11)
-</textarea>
-      
-      </div>
-                  </div>
-                  <div class="step skip-bg">
-                    <span>And user enters account credentials</span>
-      <div>Step skipped
-      </div>
-                  </div>
-                  <div class="step skip-bg">
-                    <span>And user includes the add ons "true" "true"</span>
-      <div>Step skipped
-      </div>
-                  </div>
-                  <div class="step skip-bg">
-                    <span>Then verify checkout details are correct</span>
-      <div>Step skipped
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>stepDefinition.Hooks.tearDown(io.cucumber.java.Scenario)</span>
-      <div>verify_user_can_checkout_the_subscribed_package
-          <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='../embedded2.png' src="../embedded2.png">
-    
-    </div></div>
-</div>
-      <div>
-      </div>
-                  </div>
-              </div>
-            </div>
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="58"><span class="badge log fail-bg mr-2">Fail</span>verify user can checkout the subscribed package</div>
-                    <div class="status-avatar float-right">
-                      <i class="fa fa-paperclip"></i>
-                    </div>
-                </div>
-              </div>
-              <div class="card-body mt-3 ">
-                  <div class="step pass-bg">
-                    <span>Given user has logged in to application</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When user selects country "KSA"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And choose and verify trial plan type "Premium"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And user enters account credentials</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step fail-bg">
-                    <span>And user includes the add ons "false" "false"</span>
-      <div>
-        <textarea disabled class="code-block">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at org.testng.Assert.assertTrue(Assert.java:66)
-	at com.pages.CheckOut.addOnPageFieldsVerification(CheckOut.java:112)
-	at stepDefinition.SubscriptionSteps.user_includes_the_add_ons(SubscriptionSteps.java:38)
-	at ✽.user includes the add ons "false" "false"(file:///Users/rahul/Documents/ideaProjects/StvProject_Cucumber/src/test/resources/features/Subscription.feature:13)
-</textarea>
-      
-      </div>
-                  </div>
-                  <div class="step skip-bg">
-                    <span>Then verify checkout details are correct</span>
-      <div>Step skipped
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>stepDefinition.Hooks.tearDown(io.cucumber.java.Scenario)</span>
-      <div>verify_user_can_checkout_the_subscribed_package
-          <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='../embedded3.png' src="../embedded3.png">
-    
-    </div></div>
-</div>
-      <div>
-      </div>
-                  </div>
-              </div>
-            </div>
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="69"><span class="badge log fail-bg mr-2">Fail</span>verify user can checkout the subscribed package</div>
-                    <div class="status-avatar float-right">
-                      <i class="fa fa-paperclip"></i>
-                    </div>
-                </div>
-              </div>
-              <div class="card-body mt-3 ">
-                  <div class="step pass-bg">
-                    <span>Given user has logged in to application</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When user selects country "Bahrain"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And choose and verify trial plan type "Lite"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And user enters account credentials</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step fail-bg">
-                    <span>And user includes the add ons "true" "false"</span>
-      <div>
-        <textarea disabled class="code-block">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at org.testng.Assert.assertTrue(Assert.java:66)
-	at com.pages.CheckOut.addOnPageFieldsVerification(CheckOut.java:119)
-	at stepDefinition.SubscriptionSteps.user_includes_the_add_ons(SubscriptionSteps.java:38)
-	at ✽.user includes the add ons "true" "false"(file:///Users/rahul/Documents/ideaProjects/StvProject_Cucumber/src/test/resources/features/Subscription.feature:13)
-</textarea>
-      
-      </div>
-                  </div>
-                  <div class="step skip-bg">
-                    <span>Then verify checkout details are correct</span>
-      <div>Step skipped
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>stepDefinition.Hooks.tearDown(io.cucumber.java.Scenario)</span>
-      <div>verify_user_can_checkout_the_subscribed_package
-          <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='../embedded4.png' src="../embedded4.png">
-    
-    </div></div>
-</div>
-      <div>
-      </div>
-                  </div>
-              </div>
-            </div>
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="80"><span class="badge log pass-bg mr-2">Pass</span>verify user can checkout the subscribed package</div>
-                </div>
-              </div>
-              <div class="card-body mt-3 collapse">
-                  <div class="step pass-bg">
-                    <span>Given user has logged in to application</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When user selects country "Bahrain"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And choose and verify trial plan type "Classic"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And user enters account credentials</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And user includes the add ons "false" "true"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then verify checkout details are correct</span>
-      <div>
-      </div>
-                  </div>
-              </div>
-            </div>
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="91"><span class="badge log pass-bg mr-2">Pass</span>verify user can checkout the subscribed package</div>
-                </div>
-              </div>
-              <div class="card-body mt-3 collapse">
-                  <div class="step pass-bg">
-                    <span>Given user has logged in to application</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When user selects country "Bahrain"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And choose and verify trial plan type "Premium"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And user enters account credentials</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And user includes the add ons "true" "false"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then verify checkout details are correct</span>
       <div>
       </div>
                   </div>
@@ -774,17 +386,15 @@ eventsCount: 5,
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>5</span>
-<span class='badge log badge-danger'>5</span>
+<span class='badge log badge-danger'>2</span>
 </span>
 <p class="name">@checkoutFlow</p>
-<p class="duration text-sm">10 tests</p>
+<p class="duration text-sm">2 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>@checkoutFlow</h4>
-<span status="pass" class='badge log pass-bg'>5 passed</span>
-<span status="fail" class='badge log badge-danger'>5 failed</span>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -797,7 +407,7 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>17:25:22 pm</td>
+<td>08:14:00 am</td>
 <td>
 <a href="#" class="linked" test-id='1' id='2'>verify user can checkout the subscribed package</a>
 <div class="">
@@ -805,91 +415,11 @@ eventsCount: 5,
 </div>
 </td>
 </tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:25:22 pm</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>08:14:00 am</td>
 <td>
 <a href="#" class="linked" test-id='1' id='3'>verify user can checkout the subscribed package</a>
-<div class="">
-<span class="badge badge-default">Checkout the Subscription Package.verify user can checkout the subscribed package</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:25:43 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='14'>verify user can checkout the subscribed package</a>
-<div class="">
-<span class="badge badge-default">Checkout the Subscription Package.verify user can checkout the subscribed package</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:25:59 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='25'>verify user can checkout the subscribed package</a>
-<div class="">
-<span class="badge badge-default">Checkout the Subscription Package.verify user can checkout the subscribed package</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>17:26:14 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='36'>verify user can checkout the subscribed package</a>
-<div class="">
-<span class="badge badge-default">Checkout the Subscription Package.verify user can checkout the subscribed package</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>17:26:24 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='47'>verify user can checkout the subscribed package</a>
-<div class="">
-<span class="badge badge-default">Checkout the Subscription Package.verify user can checkout the subscribed package</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>17:26:34 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='58'>verify user can checkout the subscribed package</a>
-<div class="">
-<span class="badge badge-default">Checkout the Subscription Package.verify user can checkout the subscribed package</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>17:26:44 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='69'>verify user can checkout the subscribed package</a>
-<div class="">
-<span class="badge badge-default">Checkout the Subscription Package.verify user can checkout the subscribed package</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:27:01 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='80'>verify user can checkout the subscribed package</a>
-<div class="">
-<span class="badge badge-default">Checkout the Subscription Package.verify user can checkout the subscribed package</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:27:15 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='91'>verify user can checkout the subscribed package</a>
 <div class="">
 <span class="badge badge-default">Checkout the Subscription Package.verify user can checkout the subscribed package</span>
 </div>
@@ -918,15 +448,15 @@ eventsCount: 5,
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>4</span>
+<span class='badge log badge-danger'>1</span>
 </span>
 <p class="name">java.lang.AssertionError</p>
-<p class="duration text-sm">4 tests</p>
+<p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>java.lang.AssertionError</h4>
-<span status="fail" class='badge log badge-danger'>4 failed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -939,41 +469,11 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>17:26:21 pm</td>
+<td>08:14:30 am</td>
 <td>
-<a href="#" class="linked" test-id='1' id='41'>And choose and verify trial plan type "Lite"</a>
+<a href="#" class="linked" test-id='1' id='10'>And user includes the add ons "true" "true"</a>
 <div class="">
-<span class="badge badge-default">Checkout the Subscription Package.verify user can checkout the subscribed package.And choose and verify trial plan type "Lite"</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>17:26:31 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='52'>And choose and verify trial plan type "Classic"</a>
-<div class="">
-<span class="badge badge-default">Checkout the Subscription Package.verify user can checkout the subscribed package.And choose and verify trial plan type "Classic"</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>17:26:43 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='65'>And user includes the add ons "false" "false"</a>
-<div class="">
-<span class="badge badge-default">Checkout the Subscription Package.verify user can checkout the subscribed package.And user includes the add ons "false" "false"</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>17:26:59 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='76'>And user includes the add ons "true" "false"</a>
-<div class="">
-<span class="badge badge-default">Checkout the Subscription Package.verify user can checkout the subscribed package.And user includes the add ons "true" "false"</span>
+<span class="badge badge-default">Checkout the Subscription Package.verify user can checkout the subscribed package.And user includes the add ons "true" "true"</span>
 </div>
 </td>
 </tr>

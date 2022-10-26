@@ -5,3 +5,8 @@
 .DS_store
 .idea/vcs.xml
 test-output/*
+.idea/inspectionProfiles/
+src/main/.DS_Store
+src/main/java/.DS_Store
+src/main/java/com/.DS_Store
+src/main/java/com/qa/.DS_Store

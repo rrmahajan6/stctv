@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="5" failed="4" skipped="0">
+<testng-results ignored="0" total="9" passed="0" failed="9" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-23T17:25:21 IST" name="Surefire suite" finished-at="2022-10-23T17:27:56 IST" duration-ms="154754">
+  <suite started-at="2022-10-24T12:49:27 IST" name="Surefire suite" finished-at="2022-10-24T12:51:28 IST" duration-ms="121529">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.TestRunner@12b0404f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-10-23T17:25:21 IST" name="Surefire test" finished-at="2022-10-23T17:27:56 IST" duration-ms="154754">
+    <test started-at="2022-10-24T12:49:27 IST" name="Surefire test" finished-at="2022-10-24T12:51:28 IST" duration-ms="121529">
       <class name="testrunners.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testrunners.TestRunner@12b0404f]" started-at="2022-10-23T17:25:21 IST" name="setUpClass" finished-at="2022-10-23T17:25:22 IST" duration-ms="838" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testrunners.TestRunner@12b0404f]" started-at="2022-10-24T12:49:27 IST" name="setUpClass" finished-at="2022-10-24T12:49:28 IST" duration-ms="785" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -21,7 +21,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.TestRunner@12b0404f]" started-at="2022-10-23T17:25:22 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-23T17:25:43 IST" duration-ms="20628" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.TestRunner@12b0404f]" started-at="2022-10-24T12:49:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-24T12:49:47 IST" duration-ms="19059" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -34,10 +34,27 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at org.testng.Assert.assertTrue(Assert.java:66)
+at com.pages.CheckOut.footerDetailsValidations(CheckOut.java:146)
+at com.pages.CheckOut.orderDetailsVerification(CheckOut.java:102)
+at stepDefinition.SubscriptionSteps.verify_checkout_details_are_correct(SubscriptionSteps.java:43)
+at ✽.verify checkout details are correct(file:///Users/rahul/Documents/ideaProjects/StvProject_Cucumber/src/test/resources/features/Subscription.feature:14)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.TestRunner@12b0404f]" started-at="2022-10-23T17:25:43 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-23T17:25:59 IST" duration-ms="15826" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.TestRunner@12b0404f]" started-at="2022-10-24T12:49:47 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-24T12:50:00 IST" duration-ms="13712" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -50,10 +67,27 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at org.testng.Assert.assertTrue(Assert.java:66)
+at com.pages.CheckOut.footerDetailsValidations(CheckOut.java:146)
+at com.pages.CheckOut.orderDetailsVerification(CheckOut.java:102)
+at stepDefinition.SubscriptionSteps.verify_checkout_details_are_correct(SubscriptionSteps.java:43)
+at ✽.verify checkout details are correct(file:///Users/rahul/Documents/ideaProjects/StvProject_Cucumber/src/test/resources/features/Subscription.feature:14)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.TestRunner@12b0404f]" started-at="2022-10-23T17:25:59 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-23T17:26:14 IST" duration-ms="14910" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.TestRunner@12b0404f]" started-at="2022-10-24T12:50:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-24T12:50:13 IST" duration-ms="12961" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -66,10 +100,27 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at org.testng.Assert.assertTrue(Assert.java:66)
+at com.pages.CheckOut.footerDetailsValidations(CheckOut.java:146)
+at com.pages.CheckOut.orderDetailsVerification(CheckOut.java:102)
+at stepDefinition.SubscriptionSteps.verify_checkout_details_are_correct(SubscriptionSteps.java:43)
+at ✽.verify checkout details are correct(file:///Users/rahul/Documents/ideaProjects/StvProject_Cucumber/src/test/resources/features/Subscription.feature:14)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.TestRunner@12b0404f]" started-at="2022-10-23T17:26:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-23T17:26:24 IST" duration-ms="10043" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.TestRunner@12b0404f]" started-at="2022-10-24T12:50:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-24T12:50:21 IST" duration-ms="7830" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -103,7 +154,7 @@ at ✽.choose and verify trial plan type "Lite"(file:///Users/rahul/Documents/id
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.TestRunner@12b0404f]" started-at="2022-10-23T17:26:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-23T17:26:34 IST" duration-ms="10693" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.TestRunner@12b0404f]" started-at="2022-10-24T12:50:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-24T12:50:29 IST" duration-ms="7882" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -137,7 +188,7 @@ at ✽.choose and verify trial plan type "Classic"(file:///Users/rahul/Documents
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.TestRunner@12b0404f]" started-at="2022-10-23T17:26:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-23T17:26:44 IST" duration-ms="9586" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.TestRunner@12b0404f]" started-at="2022-10-24T12:50:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-24T12:50:38 IST" duration-ms="9120" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -169,7 +220,40 @@ at ✽.user includes the add ons "false" "false"(file:///Users/rahul/Documents/i
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.TestRunner@12b0404f]" started-at="2022-10-23T17:26:44 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-23T17:27:01 IST" duration-ms="17337" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.TestRunner@12b0404f]" started-at="2022-10-24T12:50:38 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-24T12:50:52 IST" duration-ms="13847" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["verify user can checkout the subscribed package"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Checkout the Subscription Package"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at org.testng.Assert.assertTrue(Assert.java:66)
+at com.pages.CheckOut.footerDetailsValidations(CheckOut.java:146)
+at com.pages.CheckOut.orderDetailsVerification(CheckOut.java:102)
+at stepDefinition.SubscriptionSteps.verify_checkout_details_are_correct(SubscriptionSteps.java:43)
+at ✽.verify checkout details are correct(file:///Users/rahul/Documents/ideaProjects/StvProject_Cucumber/src/test/resources/features/Subscription.feature:14)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.TestRunner@12b0404f]" started-at="2022-10-24T12:50:52 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-24T12:51:01 IST" duration-ms="8675" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -194,14 +278,14 @@ at org.testng.Assert.assertTrue(Assert.java:56)
 at org.testng.Assert.assertTrue(Assert.java:66)
 at com.pages.CheckOut.addOnPageFieldsVerification(CheckOut.java:119)
 at stepDefinition.SubscriptionSteps.user_includes_the_add_ons(SubscriptionSteps.java:38)
-at ✽.user includes the add ons "true" "false"(file:///Users/rahul/Documents/ideaProjects/StvProject_Cucumber/src/test/resources/features/Subscription.feature:13)
+at ✽.user includes the add ons "false" "true"(file:///Users/rahul/Documents/ideaProjects/StvProject_Cucumber/src/test/resources/features/Subscription.feature:13)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.TestRunner@12b0404f]" started-at="2022-10-23T17:27:01 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-23T17:27:15 IST" duration-ms="14229" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.TestRunner@12b0404f]" started-at="2022-10-24T12:51:01 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-24T12:51:13 IST" duration-ms="12673" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -214,26 +298,27 @@ at ✽.user includes the add ons "true" "false"(file:///Users/rahul/Documents/id
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at org.testng.Assert.assertTrue(Assert.java:66)
+at com.pages.CheckOut.footerDetailsValidations(CheckOut.java:146)
+at com.pages.CheckOut.orderDetailsVerification(CheckOut.java:102)
+at stepDefinition.SubscriptionSteps.verify_checkout_details_are_correct(SubscriptionSteps.java:43)
+at ✽.verify checkout details are correct(file:///Users/rahul/Documents/ideaProjects/StvProject_Cucumber/src/test/resources/features/Subscription.feature:14)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.TestRunner@12b0404f]" started-at="2022-10-23T17:27:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-23T17:27:31 IST" duration-ms="15558" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["verify user can checkout the subscribed package"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Checkout the Subscription Package"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testrunners.TestRunner@12b0404f]" started-at="2022-10-23T17:27:31 IST" name="tearDownClass" finished-at="2022-10-23T17:27:56 IST" duration-ms="25050" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testrunners.TestRunner@12b0404f]" started-at="2022-10-24T12:51:13 IST" name="tearDownClass" finished-at="2022-10-24T12:51:28 IST" duration-ms="14926" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
